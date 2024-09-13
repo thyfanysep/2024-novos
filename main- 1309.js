@@ -29,18 +29,11 @@ const botoes = document.querySelectorAll('.botao');
  const tempoObjetivo4 = new Date('2025-02-18T00:00:00');
  let tempoAtual = new Date ();
 
- const tempos = 
- [ tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
-
- //contadores[0].textContent = calculatempo(tempos[0] );
- //contadores[1].textContent = calculatempo(tempos[1] );
- //contadores[2].textContent = calculatempo(tempos[2] );
- //contadores[3].textContent = calculatempo(tempos[3] );
+ contadores[0].textContent = calculatempo(tempoObjetivo1 );
+ contadores[1].textContent = calculatempo(tempoObjetivo2 );
+ contadores[2].textContent = calculatempo(tempoObjetivo3 );
+ contadores[3].textContent = calculatempo(tempoObjetivo4 );
  
- fr (let i = 0; i < contadores.length; i++) {
-    contadores[0].textContent = calculaTempo(tempos[0]);
- }
-
  function calculatempo(tempoObjetivo) {
     let tempoAtual = new Date ();
     let tempoFinal = tempoObjetivo - tempoAtual;
